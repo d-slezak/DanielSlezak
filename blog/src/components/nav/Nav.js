@@ -28,7 +28,7 @@ export default function Nav() {
                 </div>
                 <div className="shrink w-80 sm:order-2">
                     <Link href={"/"} className="font-bold uppercase text-3xl">
-                        Design
+                        Dan.Slezak
                     </Link>
                 </div>
                 <div className="w-96 order-3 flex justify-center">
