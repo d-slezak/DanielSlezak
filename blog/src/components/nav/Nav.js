@@ -6,21 +6,39 @@ import { ImFacebook, ImInstagram, ImTwitter } from "react-icons/im";
 
 
 let navItems = [{
-    title: 'About Me',
-    link: '#'
-},
-{
-    title: 'Blog',
-    link: '#'
-},
-{
-    title: 'Projects',
-    link: '#'
-},
-{
-    title: 'Contact',
-    link: '#'
-},
+        title: 'About Me',
+        link: '#'
+    },
+    {
+        title: 'Blog',
+        link: '#'
+    },
+    {
+        title: 'Projects',
+        link: '#'
+    },
+    {
+        title: 'Contact',
+        link: '#'
+    },
+]
+
+let socials = [
+    {
+        title: 'Facebook',
+        icon: ImFacebook,
+        link: '#'
+    },
+    {
+        title: 'Instagram',
+        icon: ImInstagram,
+        link: '#'
+    },
+    {
+        title: 'Twitter',
+        icon: ImTwitter,
+        link: '#'
+    },
 ]
 
 export default function Nav() {
@@ -41,10 +59,10 @@ export default function Nav() {
                     ))}
                 </div>
                 <div className="w-96 order-3 flex justify-center">
-                    <div className="flex gap-6">
-                        <a><ImFacebook color="Blue"/></a>
-                        <a><ImInstagram color="Blue"/></a>
-                        <a><ImTwitter color="Blue"/></a>
+                    <div className="flex gap-8">
+                        {socials.map(social => (
+                            <Link href={social.link} className='text-black text-xl hover:text-primary-accent'><social.icon/></Link>
+                        ))}
                     </div>
                 </div>
             </div>
