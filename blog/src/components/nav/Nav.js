@@ -50,7 +50,7 @@ export default function Nav() {
                         Dan.Slezak
                     </Link>
                 </div>
-                <div className="flex gap-10 order-2">
+                <div className="flex gap-10 sm:order-2 px-6 pt-5 sm:pt-0">
                     
                     {navItems.map(item => (
                         <NavItem
@@ -58,13 +58,7 @@ export default function Nav() {
                         />
                     ))}
                 </div>
-                <div className="w-96 order-3 flex justify-center">
-                    <div className="flex gap-8">
-                        {socials.map(social => (
-                            <Link href={social.link} className='text-black text-xl hover:text-primary-accent'><social.icon/></Link>
-                        ))}
-                    </div>
-                </div>
+
             </div>
         </header>
     )
