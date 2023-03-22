@@ -9,10 +9,12 @@ export default function Layout({children}) {
             <Head>
                 <title>Dan.Slezak</title>
             </Head>
+            <div className="min-h-screen flex flex-col">
+                <Nav></Nav>
+                <main className="flex-1 min-h-full">{children}</main>
+                <Footer></Footer>
+            </div>
 
-            <Nav></Nav>
-            <main>{children}</main>
-            <Footer></Footer>
         </>
     )
 }
