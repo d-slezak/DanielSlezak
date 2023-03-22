@@ -2,8 +2,6 @@ import Link from "next/link";
 
 import NavItem from "./NavItem";
 
-import { ImFacebook, ImInstagram, ImTwitter } from "react-icons/im";
-
 
 let navItems = [{
         title: 'About Me',
@@ -19,24 +17,6 @@ let navItems = [{
     },
     {
         title: 'Contact',
-        link: '#'
-    },
-]
-
-let socials = [
-    {
-        title: 'Facebook',
-        icon: ImFacebook,
-        link: '#'
-    },
-    {
-        title: 'Instagram',
-        icon: ImInstagram,
-        link: '#'
-    },
-    {
-        title: 'Twitter',
-        icon: ImTwitter,
         link: '#'
     },
 ]
