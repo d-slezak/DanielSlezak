@@ -23,6 +23,12 @@ function Slide(){
                     <Link href={"/"} className="text-orange-600 hover:text-orange-800">Travel</Link>
                 </div>
             </div>
+            <div>
+            Image of Me
+            Introduction about yourself and background
+            Skills and technology I'm proficient in
+            </div>
         </div>
+
     )
 }
