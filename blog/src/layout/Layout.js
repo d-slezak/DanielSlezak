@@ -11,7 +11,7 @@ export default function Layout({children}) {
             </Head>
             <div className="min-h-screen flex flex-col">
                 <Nav></Nav>
-                <main className="flex-1 min-h-full">{children}</main>
+                <main className="flex flex-col flex-1 min-h-full">{children}</main>
                 <Footer></Footer>
             </div>
 
