@@ -1,5 +1,6 @@
 import Image from "next/image"
 import BlogCard from "@/components/blogCard/BlogCard"
+import Link from "next/link"
 
 export default function Landing() {
     return (
@@ -13,7 +14,7 @@ export default function Landing() {
                     <div className="text-lg text-center">I am a <span className="text-secondary-accent font-extrabold">Junior Developer</span> working in Ontario, Canada</div>
                     <div className="text-lg text-center">Welcome to my Personal Website</div>
                     <div className="flex content-center justify-center">
-                        <button className="bg-secondary-accent mt-8 px-8 py-4 border-4 rounded-3xl border-secondary-light text-white font-bold hover:border-primary"> About Me</button>
+                        <Link href={"/aboutme/AboutMe"} className="bg-secondary-accent mt-8 px-8 py-4 border-4 rounded-3xl border-secondary-light text-white font-bold hover:border-primary"> About Me</Link>
                     </div>
                 </div>
             </div>
@@ -21,7 +22,7 @@ export default function Landing() {
                 <div className="flex flex-col justify-center w-3/6">
                     <div className="flex flex-col items-center justify-center pb-8 gap-2">
                         <div className="text-center text-4xl font-extrabold"> Check Out</div>
-                        <button className="bg-secondary-accent w-1/5 px-8 py-4 rounded-3xl border-4 border-secondary-light text-white font-bold hover:border-primary">My Blog</button>
+                        <Link href={"/blog/Blog"} className="bg-secondary-accent px-10 py-4 rounded-3xl border-4 border-secondary-light text-white font-bold hover:border-primary text-center">My Blog</Link>
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <div className="text-center text-2xl m-4"> Here's my latest post!</div>
@@ -40,7 +41,9 @@ export default function Landing() {
                     Here are some of my work
                 </div>
                 <div>Project tiles</div>
-                <button>All Projects</button>
+                <div className="flex content-center justify-center">
+                    <Link href={"/projects/Projects"} className="bg-secondary-accent mt-8 px-8 py-4 border-4 rounded-3xl border-secondary-light text-white font-bold hover:border-primary"> View My Projects</Link>
+                </div>
             </div>
             <div className="flex flex-col py-10 bg-primary-accent">
                 <div> Sign up for my newslettter </div>
