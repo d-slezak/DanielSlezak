@@ -5,19 +5,19 @@ import NavItem from "./NavItem";
 
 let navItems = [{
         title: 'About Me',
-        link: '#'
+        link: '/aboutme/AboutMe'
     },
     {
         title: 'Blog',
-        link: '#'
+        link: '/blog/Blog'
     },
     {
         title: 'Projects',
-        link: '#'
+        link: '/projects/Projects'
     },
     {
         title: 'Contact',
-        link: '#'
+        link: '/contact/Contact'
     },
 ]
 
@@ -35,6 +35,7 @@ export default function Nav() {
                     {navItems.map(item => (
                         <NavItem
                             title = {item.title}
+                            link = {item.link}
                         />
                     ))}
                 </div>

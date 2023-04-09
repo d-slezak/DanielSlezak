@@ -1,14 +1,17 @@
+import Layout from "@/layout/Layout"
 import Image from "next/image"
 import Link from "next/link"
 
 export default function AboutMe() {
     return (
-        <section className="py-16">
-            <div className="container mx-auto md:px-20">
-                <h1 className="font-bold text-4xl pb-12 text-center">About Me</h1>
-                {Slide()}
-            </div>
-        </section>
+        <Layout>
+            <section className="py-16">
+                <div className="container mx-auto md:px-20">
+                    <h1 className="font-bold text-4xl pb-12 text-center">About Me</h1>
+                    {Slide()}
+                </div>
+            </section>
+        </Layout>
     )
 }
 
