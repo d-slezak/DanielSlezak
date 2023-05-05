@@ -24,9 +24,9 @@ let navItems = [{
 export default function Nav() {
     return (
         <header className="bg-primary">
-            <div className="xl:container xl:mx-auto flex flex-col items-center sm:flex-row sm:justify-between text-center py-3">
+            <div className="xl:container xl:mx-auto flex flex-col items-center sm:flex-row sm:justify-between text-center py-3 text-primary-accent">
                 <div className="shrink w-80 sm:order-1">
-                    <Link href={"/"} className="font-bold uppercase text-3xl hover:text-primary-accent ">
+                    <Link href={"/"} className="font-bold uppercase text-3xl hover:text-secondary-accent ">
                         Dan.Slezak
                     </Link>
                 </div>
