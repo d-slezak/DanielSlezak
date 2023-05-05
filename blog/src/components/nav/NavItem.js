@@ -8,7 +8,7 @@ export default function NavItem({title, link}) {
     const currentRoute = router.pathname;
 
     return (
-        <div className=" text-lg hover:text-primary-accent hover:underline">
+        <div className=" text-lg hover:text-primary-accent hover:underline" key={{title}}>
             <Link href={(link ? link : '/')} className={currentRoute === link ? "font-extrabold text-secondary-accent underline" : null}>{title}</Link>
         </div>
     )

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useState } from "react";
 
 import NavItem from "./NavItem";
 
@@ -22,6 +23,14 @@ let navItems = [{
 ]
 
 export default function Nav() {
+
+    // const [isLoading, setIsLoading] = useState(true);
+    const [showMenu, setShowMenu] = useState(false);
+
+    const handleMenuClick = () =>{
+        setShowMenu(!showMenu);
+    }
+
     return (
         <header className="bg-primary">
             <div className="xl:container xl:mx-auto flex items-center md:flex-row md:justify-between text-center py-3 text-primary-accent">
@@ -30,8 +39,8 @@ export default function Nav() {
                         Dan.Slezak
                     </Link>
                 </div>
-                <div className="order-1 self-start px-10 md:hidden">
-                    X
+                <div className="order-1 self-start px-5 sm:px-10 z-10 md:hidden">
+                    <button className="btn " onClick={(e) => handleMenuClick()}>X</button>
                 </div>
                 <div className="hidden sm:visible md:flex md:gap-10 md:px-6 md:pt-5 md:order-2">
                     {navItems.map(item => (
@@ -43,6 +52,22 @@ export default function Nav() {
                 </div>
 
             </div>
+            {showMenu ? (
+                    <div className="text-center border-y-2 border-solid border-primary-accent">
+                        <NavItem 
+                            title={'Home'}
+                            link = {"/"}
+                        />
+                        {navItems.map(item => (
+                            <NavItem 
+                                title={item.title}
+                                link = {item.link}
+                            />
+                        ))}
+                    </div>
+                 ) : null
+
+                 }
         </header>
     )
 }
