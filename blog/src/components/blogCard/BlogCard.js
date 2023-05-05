@@ -5,8 +5,8 @@ import { ImPriceTags } from "react-icons/im";
 export default function BlogCard ({title, description, datePosted, tags, thumbnail, link}) {
     return (
         <div className="w-4/6">
-            <div className="relative z-50 -ml-8 mr-8 -mb-8  bg-secondary-accent p-3 text-3xl border-4 border-primary rounded-md">{title}</div>
-            <div className="z-0 flex flex-col bg-white border-4 border-primary rounded-md p-4 pt-8">
+            <div className="relative lg:z-50 lg:-ml-8 lg:mr-8 lg:-mb-8  bg-secondary-accent p-3 text-3xl border-4 border-primary rounded-md w-100">{title}</div>
+            <div className="z-0 flex flex-col bg-white border-4 border-primary rounded-md p-4 pt-8 invisible lg:visible">
                 <div className="text-secondary-dark text-xl">{datePosted}</div>
                 <div className="flex px-4 mb-4">
                     <Image className="border-4 border-primary rounded-md w-4/5" src={thumbnail} width={400} height={400} />
