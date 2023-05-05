@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Landing() {
     return (
         <div>
-            <div className="flex flex-col flex-1 self-center py-10">
+            <div className="flex flex-col flex-1 self-center py-10 h-full">
                 <div>
                     <div className="text-6xl text-secondary-light text-center">Hi, I'm Dan Slezak</div>
                     <div className="image flex justify-center">
@@ -18,7 +18,7 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-            <div className="bg-primary-accent flex justify-center py-10">
+            <div className="bg-primary-accent flex justify-center pt-8 pb-20 border-y-2 border-solid border-primary h-screen">
                 <div className="flex flex-col justify-center w-3/6">
                     <div className="flex flex-col items-center justify-center pb-8 gap-2">
                         <div className="text-center text-4xl font-extrabold"> Check Out</div>
@@ -36,7 +36,7 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col py-10">
+            <div className="flex flex-col py-10 h-screen">
                 <div>
                     Here are some of my work
                 </div>
@@ -45,7 +45,7 @@ export default function Landing() {
                     <Link href={"/projects/Projects"} className="bg-secondary-accent mt-8 px-8 py-4 border-4 rounded-3xl border-secondary-light text-white font-bold hover:border-primary"> View My Projects</Link>
                 </div>
             </div>
-            <div className="flex flex-col py-10 bg-primary-accent">
+            <div className="flex flex-col py-10 bg-primary-accent border-y-2 border-solid border-primary">
                 <div> Sign up for my newslettter </div>
                 <div>News Letter Card</div>
             </div>
