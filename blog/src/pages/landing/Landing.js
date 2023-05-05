@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Landing() {
     return (
         <div>
-            <div className="flex flex-col flex-1 self-center py-10 h-full">
+            <div className="flex flex-col flex-1 self-center py-10">
                 <div>
                     <div className="text-6xl text-secondary-light text-center">Hi, I'm Dan Slezak</div>
                     <div className="image flex justify-center">
@@ -14,11 +14,11 @@ export default function Landing() {
                     <div className="text-lg text-center">I am a <span className="text-secondary-accent font-extrabold">Junior Developer</span> working in Ontario, Canada</div>
                     <div className="text-lg text-center">Welcome to my Personal Website</div>
                     <div className="flex content-center justify-center">
-                        <Link href={"/aboutme/AboutMe"} className="bg-secondary-accent mt-8 px-8 py-4 border-4 rounded-3xl border-secondary-light text-white font-bold hover:border-primary"> About Me</Link>
+                        <Link href={"/aboutme/AboutMe"} className="bg-secondary-accent mt-8 px-8 py-4 border-4 rounded-3xl border-secondary-light text-white font-bold drop-shadow-lg hover:border-primary hover:drop-shadow-[0_5px_5px_rgba(202,117,88,1)]"> About Me</Link>
                     </div>
                 </div>
             </div>
-            <div className="bg-primary-accent flex justify-center pt-8 pb-20 border-y-2 border-solid border-primary h-screen">
+            <div className="bg-primary-accent flex justify-center pt-8 pb-20 border-y-2 border-solid border-primary min-h-screen">
                 <div className="flex flex-col justify-center w-3/6">
                     <div className="flex flex-col items-center justify-center pb-8 gap-2">
                         <div className="text-center text-4xl font-extrabold"> Check Out</div>
@@ -36,7 +36,7 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col py-10 h-screen">
+            <div className="flex flex-col py-10 min-h-screen">
                 <div>
                     Here are some of my work
                 </div>
