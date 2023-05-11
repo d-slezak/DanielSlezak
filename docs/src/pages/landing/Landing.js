@@ -5,16 +5,16 @@ import Link from "next/link"
 export default function Landing() {
     return (
         <div>
-            <div className="flex flex-col flex-1 self-center py-10">
+            <div className="flex flex-col flex-1 self-center py-10 px-6">
                 <div>
-                    <div className="text-6xl text-secondary-light text-center">Hi, I'm Dan Slezak</div>
+                    <div className=" text-3xl sm:text-4xl md:text-6xl text-secondary-light text-center">Hi, I'm Dan Slezak</div>
                     <div className="image flex justify-center">
                             <Image className="rounded-full border-8 border-secondary-light my-4 " src={"/images/profile.png"} width={400} height={400} />
                         </div>
-                    <div className="text-lg text-center">I am a <span className="text-secondary-accent font-extrabold">Junior Developer</span> working in Ontario, Canada</div>
-                    <div className="text-lg text-center">Welcome to my Personal Website</div>
+                    <div className=" text-md sm:text-lg text-center">I am a <span className="text-secondary-accent font-extrabold">Junior Developer</span> working in Ontario, Canada</div>
+                    <div className="text-md :text-lg text-center">Welcome to my Personal Website</div>
                     <div className="flex content-center justify-center">
-                        <Link href={"/aboutme/AboutMe"} className="bg-secondary-accent mt-8 px-8 py-4 border-4 rounded-3xl border-secondary-light text-white font-bold drop-shadow-lg hover:border-primary hover:drop-shadow-[0_5px_5px_rgba(202,117,88,1)]"> About Me</Link>
+                        <Link href={"/aboutme/AboutMe"} className="bg-secondary-accent mt-8 px-4 sm:px-8 py-2 sm:py-4 border-4 rounded-3xl border-secondary-light text-white font-bold drop-shadow-lg hover:border-primary hover:drop-shadow-[0_5px_5px_rgba(202,117,88,1)]"> About Me</Link>
                     </div>
                 </div>
             </div>
