@@ -18,7 +18,7 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-            <div className="bg-primary-accent flex justify-center lg:pt-8 lg:pb-20 border-y-2 border-solid border-primary min-h-screen">
+            <div className="bg-primary-accent flex justify-evenly lg:pt-8 lg:pb-20 border-y-2 border-solid border-primary min-h-screen">
                 <div className="flex flex-col justify-center lg:w-1/2">
                     <div className="flex flex-col items-center justify-center pb-8 gap-2">
                         <div className="text-center text-3xl  sm:text-4xl font-extrabold"> Check Out</div>
