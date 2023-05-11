@@ -18,7 +18,7 @@ export default function Landing() {
                     </div>
                 </div>
             </div>
-            <div className="bg-primary-accent flex justify-center pt-8 pb-20 border-y-2 border-solid border-primary min-h-screen">
+            <div className="bg-primary-accent flex justify-center lg:pt-8 lg:pb-20 border-y-2 border-solid border-primary min-h-screen">
                 <div className="flex flex-col justify-center lg:w-1/2">
                     <div className="flex flex-col items-center justify-center pb-8 gap-2">
                         <div className="text-center text-3xl  sm:text-4xl font-extrabold"> Check Out</div>
@@ -27,10 +27,10 @@ export default function Landing() {
                     <div className="flex flex-col justify-center items-center">
                         <div className="text-center text-lg lg:text-2xl my-2"> Here's my latest post!</div>
                         <BlogCard
-                            title={"The End of Front-End Development - Josh Comeau"}
+                            title={"The End of Front-End Development"}
                             description={"Large language models like GPT-4 are becoming increasingly capable, at an alarming rate. Within a couple of years, we won't need developers any more! …Or at least, that's the narrative going viral on Twitter. I'm much more optimistic about what these AI advancements mean for the future of software development."}
                             datePosted={"March 15th, 2023"}
-                            tags={["Software", "Front-End Developer"]}
+                            tags={["Software", "Front-End"]}
                             thumbnail={"/images/dummyBlogThumbNail.png"}
                         ></BlogCard>
                     </div>
