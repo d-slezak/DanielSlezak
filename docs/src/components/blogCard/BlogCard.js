@@ -18,6 +18,9 @@ export default function BlogCard ({title, description, datePosted, tags, thumbna
                     </div>
                 </div>
             </div>
+            <div className="w-full justify-center hidden md:max-lg:flex bg-white border-4 border-primary rounded-md">
+                <Image className=" w-4/5" src={thumbnail} width={400} height={400} />        
+            </div>
             <div className="z-0 lg:flex flex-col bg-white border-4 border-primary rounded-md p-4 pt-8 hidden lg:visible">
                 <div className="text-secondary-dark text-xl">{datePosted}</div>
                 <div className="flex px-4 mb-4">
