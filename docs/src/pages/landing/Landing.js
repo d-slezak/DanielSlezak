@@ -19,13 +19,13 @@ export default function Landing() {
                 </div>
             </div>
             <div className="bg-primary-accent flex justify-center pt-8 pb-20 border-y-2 border-solid border-primary min-h-screen">
-                <div className="flex flex-col justify-center w-3/6">
+                <div className="flex flex-col justify-center lg:w-1/2">
                     <div className="flex flex-col items-center justify-center pb-8 gap-2">
-                        <div className="text-center text-4xl font-extrabold"> Check Out</div>
-                        <Link href={"/blog/Blog"} className="bg-secondary-accent px-10 py-4 rounded-3xl border-4 border-secondary-light text-white font-bold hover:border-primary text-center">My Blog</Link>
+                        <div className="text-center text-3xl  sm:text-4xl font-extrabold"> Check Out</div>
+                        <Link href={"/blog/Blog"} className="bg-secondary-accent px-4 sm:px-8 py-2 sm:py-4 rounded-3xl border-4 border-secondary-light text-white font-bold hover:border-primary text-center">My Blog</Link>
                     </div>
                     <div className="flex flex-col justify-center items-center">
-                        <div className="text-center text-2xl m-4"> Here's my latest post!</div>
+                        <div className="text-center text-lg lg:text-2xl my-2"> Here's my latest post!</div>
                         <BlogCard
                             title={"The End of Front-End Development - Josh Comeau"}
                             description={"Large language models like GPT-4 are becoming increasingly capable, at an alarming rate. Within a couple of years, we won't need developers any more! …Or at least, that's the narrative going viral on Twitter. I'm much more optimistic about what these AI advancements mean for the future of software development."}
