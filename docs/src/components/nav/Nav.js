@@ -42,7 +42,7 @@ export default function Nav() {
                     </Link>
                 </div>
                 <div className="order-1 self-start px-5 sm:px-10 z-10 md:hidden">
-                    <button className="btn " onClick={(e) => handleMenuClick()}>{showMenu ? (<ImMenu4/>) : (<ImMenu3/>)}</button>
+                    <button className="btn " onClick={(e) => handleMenuClick()}>{showMenu ? (<ImMenu4 size={28}/>) : (<ImMenu3 size={28}/>)}</button>
                 </div>
                 <div className="hidden sm:visible md:flex md:gap-10 md:px-6 md:pt-5 md:order-2">
                     {navItems.map(item => (
